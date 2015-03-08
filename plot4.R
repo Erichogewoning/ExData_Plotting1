@@ -36,7 +36,7 @@ with(df2007, {
     
     # plot reactive power
     plot(df2007$Time, as.numeric(df2007$Global_reactive_power), xlab="datetime", ylab="Global_Reactive_Power", type="n")
-    lines(df2007$Time, as.numeric(df2007$Global_reactive_power), lwd=0.01)
+    lines(df2007$Time, as.numeric(df2007$Global_reactive_power))
 })
 
 #close device
