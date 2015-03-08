@@ -1,3 +1,5 @@
+Sys.setlocale("LC_TIME", "English") 
+
 # file is located in subfolder ExplAnalysis under working directory
 filepath <- "ExplAnalysis\\household_power_consumption.txt"
 df <- read.csv(filepath, header=TRUE, sep=';', stringsAsFactors=FALSE)
@@ -34,7 +36,7 @@ with(df2007, {
     
     # plot reactive power
     plot(df2007$Time, as.numeric(df2007$Global_reactive_power), xlab="datetime", ylab="Global_Reactive_Power", type="n")
-    lines(df2007$Time, as.numeric(df2007$Global_reactive_power), lwd=0.5)
+    lines(df2007$Time, as.numeric(df2007$Global_reactive_power), lwd=0.01)
 })
 
 #close device

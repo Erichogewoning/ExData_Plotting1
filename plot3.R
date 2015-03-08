@@ -1,3 +1,5 @@
+Sys.setlocale("LC_TIME", "English") 
+
 # file is located in subfolder ExplAnalysis under working directory
 filepath <- "ExplAnalysis\\household_power_consumption.txt"
 df <- read.csv(filepath, header=TRUE, sep=';', stringsAsFactors=FALSE)
